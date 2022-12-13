@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="description" content="Affan's personal page">
@@ -12,108 +13,176 @@
     <!-- <script src="script.js"></script> -->
 
 </head>
+
 <body>
-<header>
-    <div class="container">
-        <ul>
-            <li class="name">NINJA KEN</li>
-            <li class="header-list">
+    <header>
+        <div class="header-container">
+            <ul>
+                <li class="name">NINJA KEN</li>
+                <li class="header-list">
+                    <a href="#middle-wrapper">Tentang Saya</a>
+                </li>
+                <li class="header-list">
+                    <a href="#projects-wrapper">Proyek Contoh</a>
+                </li>
+                <li class="header-list">
+                    <a href="#message-wrapper">Hubungi Saya</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div id="top-wrapper">
+            <h1>NINJA KEN<span>.</span></h1>
+            <p>MY PORTFOLIO</p>
+            <img id="logo" src="Ninja Ken.png" alt="image-logo">
+        </div>
+        <div id="middle-wrapper">
+            <h2>Tentang Saya</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem repellendus minus hic exercitationem
+                animi. Sequi ratione corporis facilis. Tempora veniam aliquam repudiandae ipsam temporibus, quibusdam
+                nobis laborum odio facilis hic? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+                repellat totam facere fugiat vero, rerum itaque quis quod, odit id temporibus aliquam corrupti minima
+                impedit est blanditiis neque tempore iure.</p>
+        </div>
+        <div id="projects-wrapper">
+            <h2>Proyek Contoh</h2>
+            <div class="slider-container">
+                <div class="slider-item fade">
+                    <img class="project-images" src="1.png" alt="image-1">
+                    <p>Image 1</p>
+                </div>
+                <div class="slider-item fade">
+                    <img class="project-images" src="2.png" alt="image-2">
+                    <p>Image 2</p>
+                </div>
+                <div class="slider-item fade">
+                    <img class="project-images" src="3.png" alt="image-3">
+                    <p>Image 3</p>
+                </div>
+                <div class="slider-item fade">
+                    <img class="project-images" src="gurudomba-flying.png" alt="image-4">
+                    <p>Image 4</p>
+                </div>
+                <div class="slider-item fade">
+                    <img class="project-images" src="gurudomba.png" alt="image-5">
+                    <p>Image 5</p>
+                </div>
+                <a class="prev" onclick="updateSlide(-1)">&#10094;</a>
+                <a class="next" onclick="updateSlide(1)">&#10095;</a>
+            </div>
+        </div>
+        <div id="message-wrapper">
+            <h2>Hubungi Saya</h2>
+            <input class="ipt email" type="text" value="Email (Diperlukan)">
+            <textarea class="ipt message" type="text">Pesan (Diperlukan)</textarea>
+            <button id="send">Kirim</button>
+        </div>
+        <div id="faq">
+            <h2>FAQ</h2>
+            <div id="faq-container">
+                <button class="accordion">Berapa gaji di sini bos?</button>
+                <div class="panel">
+                    <p>Gaji di sini bisa di antara 1 sampai 600 juta per bulannya bos.</p>
+                </div>
+                <button class="accordion">Di sini benefitnya apa aja yak?</button>
+                <div class="panel">
+                    <p>Ada makan siang tiap hari di hotel sebelah, digratisin CEO sini loh. Juga dapet 10 jenis asuransi
+                        kesehatan. Semua anak-anakmu juga digratisin pendidikannya.</p>
+                </div>
+                <button class="accordion">Terus perusahaan ini dapet duit dari mane?</button>
+                <div class="panel">
+                    <p>Dari doa orang tua yang tiada henti lah, dari mana lagi yang lebih berkah dari itu?</p>
+                </div>
+            </div>
+            <ul></ul>
+        </div>
+    </main>
+    <footer>
+        <p class="footer-name">NINJA KEN</p>
+        <ul class="footer-list">
+            <li>
                 <a href="#middle-wrapper">Tentang Saya</a>
             </li>
-            <li class="header-list">
+            <li>
                 <a href="#projects-wrapper">Proyek Contoh</a>
             </li>
-            <li class="header-list">
+            <li>
                 <a href="#message-wrapper">Hubungi Saya</a>
             </li>
         </ul>
+    </footer>
+    <!-- Bagian Modal -->
+    <div id="modal">
+        <div id="modalContent">
+            <span id="closeModalIcon">&times;</span>
+            <p id="modalMessage"></p>
+        </div>
     </div>
-</header>
-<main>
-    <div id="top-wrapper">
-        <h1>NINJA KEN<span>.</span></h1>
-        <p>MY PORTFOLIO</p>
-        <img  id = "logo" src="Ninja Ken.png" alt="image-logo">
-    </div>
-    <div id="middle-wrapper">
-        <h2>Tentang Saya</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem repellendus minus hic exercitationem animi. Sequi ratione corporis facilis. Tempora veniam aliquam repudiandae ipsam temporibus, quibusdam nobis laborum odio facilis hic? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus repellat totam facere fugiat vero, rerum itaque quis quod, odit id temporibus aliquam corrupti minima impedit est blanditiis neque tempore iure.</p>
-    </div>
-    <div id="projects-wrapper">
-        <h2>Proyek Contoh</h2>
-        <ul class="flex-list">
-            <li>
-                <img class="project-images" src="1.png" alt="image-1">
-                <p>Image 1</p>
-            </li>
-            <li>
-                <img class="project-images" src="2.png" alt="image-2">
-                <p>Image 2</p>
-            </li>
-            <li>
-                <img class="project-images" src="3.png" alt="image-3">
-                <p>Image 3</p>
-            </li>
-        </ul>
-    </div>
-    <div id="message-wrapper">
-        <h2>Hubungi Saya</h2>
-        <input class= "ipt email" type="text" value="Email (Diperlukan)">
-        <textarea class="ipt message" type="text">Pesan (Diperlukan)</textarea>
-        <button id="send">Kirim</button>
-    </div>
-</main>
-<footer>
-    <p class="footer-name">NINJA KEN</p>
-    <ul class="footer-list">
-        <li>
-            <a href="#middle-wrapper">Tentang Saya</a>
-        </li>
-        <li>
-            <a href="#projects-wrapper">Proyek Contoh</a>
-        </li>
-        <li>
-            <a href="#message-wrapper">Hubungi Saya</a>
-        </li>
-    </ul>
-</footer>
-<!-- Bagian Modal -->
-<div id="modal">
-    <div id="modalContent">
-        <span id="closeModalIcon">&times;</span>
-        <p id="modalMessage"></p>
-    </div>
-</div>
 
-<script>
-// Script Modal
-    const modal = document.getElementById("modal");
-    const openModal = document.getElementById("send");
-    const closeModal = document.getElementById("closeModalIcon");
-    const emailName = document.getElementsByClassName("email")[0].value;
-    const messageFill = document.getElementsByClassName("message")[0].innerHTML;
-    console.log(emailName + messageFill);
-    console.log(typeof emailName + typeof messageFill);
-    console.log(emailName === "" || messageFill === "");
+    <script>
+        // Script Modal Kirim
+        const modal = document.getElementById("modal");
+        const openModal = document.getElementById("send");
+        const openModal2 = document.getElementsByClassName("project-images");
+        const closeModal = document.getElementById("closeModalIcon");
 
-// Modal dibuka
-    openModal.addEventListener('click', (emailName,messageFill) => {
-        if (emailName === "" || messageFill === "") {
-            document.getElementById("modalMessage").innerHTML = "Please fill the email/message!";
-        } else {
-            document.getElementById("modalMessage").innerHTML = "Your message has been successfully sent!";
+        openModal.addEventListener('click', () => {
+            const emailName = document.getElementsByClassName("email")[0].value;
+            const messageFill = document.getElementsByClassName("message")[0].innerHTML;
+            if (emailName.includes("@") && messageFill.length >= 3) {
+                document.getElementById("modalMessage").innerHTML = "Your message has been successfully sent!";
+            } else {
+                document.getElementById("modalMessage").innerHTML = "Please fill the email/message properly!";
+            }
+            modal.style.display = "block";
+        })
+
+        for (let i = 0; i < openModal2.length; i++) {
+            openModal2[i].addEventListener('click', () => {
+                document.getElementById("modalMessage").innerHTML = "Lorem ipsum blah blah blah";
+                modal.style.display = "block";
+            })
         }
-        modal.style.display="block";
-    })
 
-// Modal ditutup
-    closeModal.addEventListener('click', () => {
-        modal.style.display="none";
-    })
+        closeModal.addEventListener('click', () => {
+            modal.style.display = "none";
+        })
+        // Script Accordion
+        const accordion = document.getElementsByClassName("accordion");
 
+        for (let i = 0; i < accordion.length; i++) {
+            accordion[i].addEventListener('click', () => {
+                const panel = accordion[i].nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            })
+        }
+        // Script Slider
+        let slideIndex = 0;
+        const updateSlide = (n) => {
+            slideIndex += n;
+            showSlide(slideIndex);
+        }
 
-
-</script>
+        const showSlide = (n) => {
+            const slides = document.getElementsByClassName("slider-item");
+            if (n > slides.length - 1) {
+                slideIndex = 0;
+            }
+            if (n < 0) {
+                slideIndex = slides.length - 1;
+            }
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex].style.display = "block";
+        }
+        showSlide(slideIndex);
+    </script>
 
 
 

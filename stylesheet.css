@@ -23,11 +23,6 @@ header {
     text-decoration: none;
 }
 
-.container p {
-    color:white;
-    font-size : 24;
-}
-
 .header-list {
     display : block;
     float : left;
@@ -92,7 +87,7 @@ span {
 h2 {
     color : black;
     font-size : 45px;
-    margin-bottom : 15px;
+    margin-bottom : 25px;
 }
 
 #middle-wrapper p {
@@ -106,23 +101,84 @@ h2 {
     text-align : center;
 }
 
-.flex-list {
-    display:flex;
+.slider-container {
+    background-color : rgba(244,244,244,1);
+    padding : 20px 50px;
     margin : 0 auto;
+    position : relative;
 }
 
-.flex-list li {
+.slider-item {
+    display : none;
+}
+
+.prev {
+    position : absolute;
+    top : 45%;
+    left : 33%;
+    font-weight : bold;
+    cursor: pointer;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    position : absolute;
+    top : 45%;
+    right :33%;
+    font-weight : bold;
+    cursor: pointer;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Animasi */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+}
+  
+@keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+
+
+/* .flex-list li {
     list-style: none;
     flex : auto;
-}
+} */
 
-.flex-list p {
+/* .flex-list p {
+    font-size : 25px;
+} */
+
+.slider-container p {
     font-size : 25px;
 }
 
 .project-images {
-    width : 80%;
+    width : 25%;
     padding : 50px 50px 20px 50px;
+    object-fit: contain;
+    cursor: pointer;
 }
 
 #message-wrapper {
@@ -229,3 +285,45 @@ footer {
     cursor : pointer;
 }
 
+#faq {
+    background-color: #fefefe;
+    padding : 75px 0;
+    text-align : center;
+}
+
+#faq-container {
+    text-align : left;
+    font-size : 20px;
+    width : 75%;
+    margin : 30px auto;
+}
+
+.accordion {
+    background-color: rgba(213, 236, 119,0.8);
+    text-align: left;
+    color : #444;
+    font-size: 20px;
+    opacity : 0.8;
+    cursor : pointer;
+    padding : 8px 20px;
+    margin-top : 15px;
+    width : 100%;
+    border : none;
+    border-bottom : 1px solid rgba(12, 150, 12, 1);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.panel {
+    background-color: rgb(194, 230, 150);
+    padding : 15px 20px;
+    border : none;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-bottom : 15px;
+    display : none;
+}
+
+.accordion:hover {
+    background-color: rgba(213, 236, 119,1);
+}
