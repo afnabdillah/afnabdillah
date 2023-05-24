@@ -1,6 +1,8 @@
 ### Hello guys👋
 
-Thank you for visiting my github. I'm a newly freshgraduate from a bootcamp in Indonesia. I'm currently learning React Native further such as push notification services, chatting with react native gifted chat and Cloud Firestore, react native animations, and Typescript. I also want to learn more about MongoDB, but everything has to be done in order, right? I'll do it later after I understand react native better. I'm currently creating an app that's similar to forgotify, if you know about it. I'm hoping to learn more about react native this way. Please visit my [website](https://afnabdillah.github.io) to find out more about me.
+Thank you for visiting my github. I'm a newly freshgraduate from a bootcamp in Indonesia. I'm currently learning React Native further such as push notification services, chatting with react native gifted chat and Cloud Firestore, react native animations, and Typescript. I also want to learn more about MongoDB, but everything has to be done in order, right? I'll do it later after I understand react native better. 
+
+I'm currently creating an app that's similar to forgotify, if you know about it. I'm hoping to learn more about react native this way. Please visit my [website](https://afnabdillah.github.io) to find out more about me.
 
 <!--
 **afnabdillah/afnabdillah** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
